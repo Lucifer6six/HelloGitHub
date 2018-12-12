@@ -1,6 +1,7 @@
 package com.up.problemrepair.hellogithub;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -16,7 +17,9 @@ public class MainActivity extends Activity {
         mTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this,"hello world",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,DrawActivity.class);
+                startActivity(intent);
+                //Toast.makeText(MainActivity.this,"hello world",Toast.LENGTH_SHORT).show();
             }
         });
     }
