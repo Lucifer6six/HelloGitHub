@@ -15,12 +15,26 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         />
-
-    <com.up.problemrepair.view.CircleView
+        <com.up.problemrepair.view.DrawLine
+            android:layout_below="@+id/tv"
+            android:id="@+id/drawLine"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+    <LinearLayout
+        android:id="@+id/LineLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/drawLine"
+        ></LinearLayout>
+   <!-- <com.up.problemrepair.view.CircleView
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_margin="10dp"
         android:background="@android:color/black"
         android:padding="10dp"
-        app:circle_color="@android:color/holo_blue_dark"/>
+        android:visibility="invisible"
+        app:circle_color="@android:color/holo_blue_dark"/>-->
 </RelativeLayout>

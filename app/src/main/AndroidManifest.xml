@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".DrawActivity">
         </activity>
+        <activity android:name=".PieChartActivity">
+        </activity>
     </application>
 
 </manifest>
